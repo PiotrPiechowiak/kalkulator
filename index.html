@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <script src="script.js"> </script>
+   <link rel="stylesheet" type="text/css" href="style.css">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>kalkulator</title>
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <title>kalkulator</title>
-    <body>
-    <p1> Piotr Piechowiak</p1><br>   
-    <img src="antenka.png">  
-        <div class="kalkulator">
-          
- <div class="display"> 
-     <p id="output">Wynik</p></div>
+    <title>Kalkulator</title>
 
-   
-    <div class="first-row">
-   <button id="r1-1">C</button>
-   <button id="r1-3">%</button>
-   <button id="r1-4">/</button>
-</div>
-<div class="second-row">
-   <button id="r2-1" >7</button>
-   <button id="r2-2" >8</button>
-   <button id="r2-3" >9</button>
-   <button id="r2-4" >X</button>
-</div>
-<div class="third-row">
-   <button id="r3-1" >4</button>
-   <button id="r3-2" >5</button>
-   <button id="r3-3" >6</button>
-   <button id="r3-4" >-</button>
-</div>
-<div class="fourth-row">
-   <button id="r4-1"  >1</button>
-   <button id="r4-2"  >2</button>
-   <button id="r4-3"  >3</button>
-   <button id="r4-4"  >+</button>
-</div>
-<div class="fifth-row">
-  <button id="r5-1" >0</button>
-  <button id="r5-2" >.</button>
-  <button id="r5-3" >=</button>
-</div> </div>
-        
-        
-          
-        
-    </body>
+
+</head>
+<body>
+
+        <p1>Kalkulator Piotr Piechowiak</p1>
     
-    
-    
-    </head>        
+<div class="display">
+    <img src="antenka.png">
+    <p id="wyswietlacz"> 0</p>
+
+<div id="first-row">
+   <button id="r1-1" onclick="wyczysc()">C</button>
+   <button id="r1-2" onclick="procent()">%</button>
+   <button id="r1-3" onclick="wyswietl('/')">/</button>
+   <button id="r1-4" onclick="wlacz/wylacz()">I/0</button>
+</div>
+
+<div id="second-row">
+   <button id="r2-1" onclick="wyswietl('7') ">7</button>
+   <button id="r2-2" onclick="wyswietl('8') ">8</button>
+   <button id="r2-3" onclick="wyswietl('9') ">9</button>
+   <button id="r2-4" onclick="wyswietl('*') ">x </button> 
+</div>
+
+<div id="third-row">
+   <button id="r3-1" onclick="wyswietl('4') ">4</button>
+   <button id="r3-2" onclick="wyswietl('5') ">5</button>
+   <button id="r3-3" onclick="wyswietl('6') ">6</button>
+   <button id="r3-4" onclick="wyswietl('-') ">-</button>
+</div>
+
+<div id="fourth-row">
+   <button id="r4-1"  onclick="wyswietl('1') ">1</button>
+   <button id="r4-2"  onclick="wyswietl('2') ">2</button>
+   <button id="r4-3"  onclick="wyswietl('3') ">3</button>
+   <button id="r4-4"  onclick="wyswietl('+') " >+</button>
+</div>
+
+<div id="fifth-row">
+  <button id="r5-1" onclick="wyswietl('0')  " >0</button>
+  <button id="r5-2" onclick="wyswietl('.')  " >.</button>
+  <button id="r5-3" onclick="oblicz('=')  " >=</button>
+</div>
+
+</div>
+
+
+
+</body>
 </html>
+ 
